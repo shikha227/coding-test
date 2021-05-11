@@ -143,35 +143,21 @@ export default function Header() {
 
           <div className={classes.grow} />
           <div className={classes.sectionDesktop}>
-
-            <IconButton color="inherit">
-              <Icon>
-                <img src="./person.svg" />
-              </Icon>
-            </IconButton>
-            <IconButton color="inherit">
-              <Icon>
-                <img src="./mail.svg" />
-              </Icon>
-            </IconButton>
-
-            <IconButton color="inherit">
-              <Icon>
-                <img src="./check.svg" />
-              </Icon>
-            </IconButton>
-
-            <IconButton color="inherit">
-              <Icon>
-                <img src="./share.svg" />
-              </Icon>
-            </IconButton>
-
-            <IconButton color="inherit">
-              <Icon>
-                <img src="./search.svg" />
-              </Icon>
-            </IconButton>
+        <IconButton className={classes.icon}>
+          <AccountCircleIcon />
+        </IconButton>
+        <IconButton className={classes.icon}>
+          <PhonelinkOffIcon />
+        </IconButton>
+        <IconButton className={classes.icon}>
+          <AssignmentTurnedInIcon />
+        </IconButton>
+        <IconButton className={classes.icon}>
+          <ShareOutlinedIcon />
+        </IconButton>
+        <IconButton className={classes.icon}>
+          <SearchIcon />
+           </IconButton>
           </div>
           <div className={classes.sectionMobile}>
             <IconButton

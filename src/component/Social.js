@@ -2,7 +2,8 @@ import React from "react"
 import {Container,Box,IconButton,Icon,Link,Typography,Paper} from '@material-ui/core';
 import { fade, makeStyles,withStyles } from "@material-ui/core/styles";
 import Grid, { GridSpacing } from '@material-ui/core/Grid';
-
+import TwitterIcon from '@material-ui/icons/Twitter';
+import LinkedInIcon from '@material-ui/icons/LinkedIn';
 
 
 const useStyles = makeStyles((theme) => ({
@@ -56,9 +57,8 @@ export default function Social(props){
       </Typography>
         </Grid>
         <Grid item xs={6} className={classes.gridItemRight} >
-          {props.image && <Icon className={classes.iconButton}  >
-              <img src={props.image}/>
-  </Icon>}
+          {props.twitterKey && <TwitterIcon color="primary"  fontSize="large"/>}
+          {props.linkedinKey && <LinkedInIcon color="primary"  fontSize="large"/>}
         <Typography variant="button" display="block" gutterBottom>
   <Link href="#" className={props.image?classes.cssPurple:classes.withoutIcon}>
   {props.msg}

@@ -139,12 +139,12 @@ startIcon={<AddIcon />}>Upload Artwork</Button>
         />
   
     <Grid container>
-     <Grid item xs={6} md={6} lg={6} className={classes.item}>
+     <Grid item xs={8} md={6} lg={6} className={classes.item}>
         <Typography variant="subtitle1" gutterBottom>
             Use TestNet (free) </Typography>
      </Grid>
        
-      <Grid item xs={6} md={6} lg={6}  className={classes.formgroup} >
+      <Grid item xs={4} md={6} lg={6}  className={classes.formgroup} >
         <FormGroup >
  <FormControlLabel
         control={<Switch checked={checked} onChange={toggleChecked} p="0" /> }
@@ -165,18 +165,19 @@ startIcon={<AddIcon />}>Upload Artwork</Button>
           { readOnly: true, }
         }  className={classes.textField}  
         />
-       <Typography variant="subtitle1" gutterBottom>
- Your wallet adress on Algorand[mainnet/Testnet]</Typography>
-</Box>
+  </Box>
+       <Typography variant="subtitle2" gutterBottom>
+ Your wallet adress on Algorand [mainnet /Testnet]</Typography>
+
  <Grid  container className={classes.info}>  
-<Grid item xs={6}>
+<Grid item xs={8} md={9}>
  <Typography variant="button" display="block" gutterBottom>
 
                         I Need More Information 
                       </Typography> 
 </Grid>
-<Grid item xs={6}>
-<Typography variant="button" display="block" gutterBottom  align="right" className={classes.cssPurple}>
+<Grid item xs={4} md={3}>
+<Typography variant="button" display="block" gutterBottom   className={classes.cssPurple}>
                         MINT NFT
                       </Typography> 
 </Grid>
