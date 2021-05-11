@@ -25,19 +25,21 @@ coding test
 │
 │   
 └───public
-    │     check.svg
-    │     favicon.ico
-    │     index.html
-    │     lnkd.png
-    │     logo192.png
-    │     logo512.png
-    │     mail.svg
-    │     mainfest.json
-    │     person.svg
-    │     robot.txt
-    │     search.svg
-    │     tile.png
-    │     twitter.png
+    │   └──dialog
+    │          │ image1.png
+    │          │ image3.png
+    │          │ image5.png
+    │   check.svg
+    │   favicon.ico
+    │   index.html
+    │   lnkd.png
+    │   mail.svg
+    │   mainfest.json
+    │   person.svg
+    │   robot.txt
+    │   search.svg
+    │   tile.png
+    │   twitter.png
 
    
 

@@ -6,37 +6,37 @@ import { makeStyles } from '@material-ui/core/styles';
 
  const tileData = [
   {
-     img: 'tile.png',
+     img: 'dialog/image1.png',
      title: 'Image1',
      author: 'author',
      cols: 3,
     },
    {
-  img: 'tile.png',
+  img: 'dialog/image3.png',
      title: 'tile.png',
      author: 'author',
      cols: 1,
     },
     {
-  img: 'tile.png',
+  img: 'dialog/image3.png',
      title: 'Image3',
      author: 'author',
      cols: 1,
     },
      {
-  img: 'tile.png',
+  img: 'dialog/image3.png',
      title: 'image4',
      author: 'author',
      cols: 1,
     },
     {
-  img: 'tile.png',
+  img: 'dialog/image5.png',
      title: 'Image5',
      author: 'author',
      cols: 1.5,
     },
      {
-  img: 'tile.png',
+  img: 'dialog/image5.png',
      title: 'Image5',
      author: 'author',
      cols: 1.5,
@@ -54,8 +54,11 @@ const useStyles = makeStyles((theme) => ({
      border: "2px solid black",
   },
    item:{
-   width:"100%", 
-     height:"100%",
+
+    [theme.breakpoints.up("md")]: {
+       width:"100%",
+    },
+  
    },
    button: {
       width:'100%',

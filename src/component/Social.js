@@ -33,6 +33,11 @@ gridItemLeft :{
     color : '#6200EE',
     fontWeight: 'bold',
   },
+   withoutIcon: {
+    color : '#6200EE',
+    fontWeight: 'bold',
+    padding:theme.spacing(0,0,0,1),
+  },
 
 
 }));
@@ -55,7 +60,7 @@ export default function Social(props){
               <img src={props.image}/>
   </Icon>}
         <Typography variant="button" display="block" gutterBottom>
-  <Link href="#" className={classes.cssPurple}>
+  <Link href="#" className={props.image?classes.cssPurple:classes.withoutIcon}>
   {props.msg}
   </Link>
   </Typography>
